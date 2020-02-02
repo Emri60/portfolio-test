@@ -23,7 +23,7 @@ var app = {
   },
   nextPage: function(evt) {
     pageActive = document.querySelectorAll(".page");
-    for (i= 0; i < pageActive.length; i++) {
+    for (let i= 0; i < pageActive.length; i++) {
       if (pageActive[i].classList.contains("page--active")) {
         if(pageActive[i].dataset.number != 4) {
           pageActive[i].classList.remove("page--active");
@@ -38,7 +38,7 @@ var app = {
   },
   previousPage: function(evt) {
     pageActive = document.querySelectorAll(".page");
-    for (i= 0; i < pageActive.length; i++) {
+    for (let i= 0; i < pageActive.length; i++) {
       console.log(pageActive[i].dataset.number);  
       if (pageActive[i].classList.contains("page--active")) {
         if(pageActive[i].dataset.number != 1) {
